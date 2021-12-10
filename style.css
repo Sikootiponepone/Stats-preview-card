@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+.background{
+	height: 100vh;
+	font-family: 'Inter', sans-serif;
+	background-color: hsl(233, 47%, 7%);
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+	border-radius:5px;
+	width: 850px;
+	display: flex;
+	overflow: hidden;
+	
+}
+
+.img {
+	width: 700px;
+    background:url('./images/image-header-desktop.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.layer {
+    background-color: rgba(117, 56, 156, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+	background-color: hsl(244, 38%, 16%);
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.info{
+	padding: 30px;
+	margin-right: 1em;
+}
+
+.info h1{
+	color: hsl(0, 0%, 100%);
+	margin-bottom: 20px;
+}
+
+.info h1 span{
+	color: hsl(277, 64%, 61%);
+}
+
+.info #p{
+	color: hsla(0, 0%, 100%, 0.75);
+	font-family: 'Lexend-Deca';
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 25px;
+	margin-bottom: 3em;
+}
+
+.buttom{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 4em;
+	padding-bottom: 1em;
+}
+
+.buttom .footer h2{
+	color: hsl(0, 0%, 100%);
+	font-size: 20px;
+	margin-bottom: 4px;
+}
+
+.buttom .footer p{
+	color: hsla(0, 0%, 100%, 0.6);
+	font-family: 'Lexend-Deca';
+	font-size: 9px;
+	letter-spacing: 2px;
+}
+
+@media screen and (max-width: 900px){
+	.container
+	.content{
+	background-color: hsl(244, 38%, 16%);
+}
+	.img {
+	width: 500px;
+    background:url('./images/image-header-desktop.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.layer {
+    background-color: rgba(117, 56, 156, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+	
+}
